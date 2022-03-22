@@ -26,8 +26,8 @@ namespace ariel{
     void Notebook::erase(int page,int row,int column, Direction dir,int length){
        
     }
-    string Notebook::show(int page){
-        return " ";
+    void Notebook::show(int page){
+        
     }
 
 };

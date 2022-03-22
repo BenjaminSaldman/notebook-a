@@ -16,7 +16,7 @@ namespace ariel{
             static void write(int page,int row,int column, Direction dir,const string &text);
             static string read(int page,int row,int column, Direction dir,int length);
             static void erase(int page,int row,int column, Direction dir,int length);
-            static string show(int page);
+            void show(int page);
     };
 
 };
