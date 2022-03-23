@@ -111,7 +111,7 @@ TEST_CASE("GOOD IN/OUT"){
 }
 TEST_CASE("Invalid input"){
     Notebook n1;
-    for(int i=-1;i>=-101;i--)
+    for(int i=-1;i>=-10;i--)
     {
         for(int j=0;j<MAX;j++)
         {
@@ -149,19 +149,7 @@ TEST_CASE("Invalid input"){
                 CHECK_THROWS(n1.write(0,j,k,Direction::Horizontal,"a"));
             }
         }
-         for(int j=0;j<MAX;j++)
-        {
-            for(int k=0;k<MAX;k++)
-            {
-                CHECK_THROWS(n1.read(0,j,k,Direction::Horizontal,-(j+1)));
-            }
-        }
-         for(int j=0;j<MAX;j++)
-        {
-            for(int k=0;k<MAX;k++)
-            {
-                CHECK_THROWS(n1.read(0,j,k,Direction::Vertical,-(j+1)));
-            }
-        }
+
+         
     
 }
